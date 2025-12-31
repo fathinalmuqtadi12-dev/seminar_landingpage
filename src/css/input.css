@@ -1,0 +1,65 @@
+/* poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./src/fonts/poppins/poppins-v24-latin-regular.woff2') format('woff2'),
+         url('./src/fonts/poppins/poppins-v24-latin-regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; /* Optional: untuk performa */
+}
+/* Soft marshmallow */
+@font-face {
+    font-family: 'Soft Marshmallow';
+    src: url('./src/fonts/soft_m/Soft-Marshmallow.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; /* Optional: untuk performa */
+}
+
+@font-face {
+    font-family: 'formula';
+    src: url('./src/fonts/Formula1/Formula1-Bold_web_0.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'gobold';
+    src: url('./src/fonts/gobold/GOBOLD_REGULAR.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold 
+               hover:bg-blue-700 transition-colors duration-300 
+               focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    }
+    
+    .card {
+        @apply bg-white rounded-xl shadow-lg p-6 border border-gray-100;
+    }
+    
+    .section-padding {
+        @apply px-4 py-12 md:px-8 lg:px-16;
+    }
+}
+
+@layer utilities {
+    .text-gradient {    
+        @apply bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent;
+    }
+
+}

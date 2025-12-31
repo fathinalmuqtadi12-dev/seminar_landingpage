@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Pelajar</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    .filter-noise {
+        filter: url(#noiseFilter);
+    }
+</style>
+
+<body class="bg-[#ffffff] min-h-screen overflow-x-hidden">
+
+
+
+    <!-- NAVBAR UTAMA -->
+    <nav
+        class="fixed top-0 left-0 right-0 z-[100] h-auto sm:h-auto lg:h-[8rem] bg-white/10 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+
+
+                <div class="leading-tight cursor-pointer">
+
+                </div>
+
+
+                <button id="sidebarToggle" class="text-white  p-2 hover:bg-white/20 transition-all z-50">
+                    <i class="fas fa-bars text-2xl md:text-4xl"></i>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="sidebarMenu"
+        class="fixed top-0 left-0 w-full h-screen bg-white/95 backdrop-blur-2xl shadow-2xl transform -translate-y-full z-[110] transition-transform duration-500 ease-in-out pt-24">
+
+
+        <div class="p-6 border-b border-gray-200 -mt-18 flex items-center justify-end w-full z-[110]">
+            <button id="closeSidebar" class="p-4 text-gray-500 hover:text-red-500 transition-colors">
+                <i class="fas fa-times text-5xl"></i>
+            </button>
+        </div>
+
+        <nav class="flex flex-col items-center justify-center h-1/2 space-y-8">
+            <div class="container mx-auto flex items-center justify-end">
+
+            </div>
+            <a href="#home"
+                class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Beranda
+            </a>
+            <a href="#about"
+                class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Tentang
+            </a>
+            <a href="#"
+                class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Daftar
+            </a>
+            <a href="#"
+                class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Masuk
+            </a>
+        </nav>
+    </div>
+
+
+    <!-- HERO -->
+    <section id="home"
+        class="relative min-h-screen bg-gray-800 sm:min-h-[120vh] md:min-h-[120vh] lg:h-[180vh] flex flex-col justify-center pb-20">
+        <!-- noise efek -->
+        <div class="absolute inset-0 filter-noise opacity-20 pointer-events-none"></div>
+
+        <!-- JUDUL -->
+        <div
+            class="relative w-full text-center z-[49] px-4 top-[50%] sm:top-[80%] md:top-[90%] lg:-top-48 lg:w-[80%] lg:left-1/2 lg:-translate-x-1/2 -translate-y-1/2 pb-20">
+            <img src="src/vector/JUDUL-ATAS.png" alt="Judul Atas" class="w-full object-fit">
+        </div>
+
+        <!-- KARAKTER -->
+        <img src="./src/vector/element-hero-2.png"
+            class="absolute top-[50%]  sm:top-[45%] md:top-[50%] left-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/4 w-[100%]  sm:scale-110 md:scale-125 lg:scale-[2] max-w-[280px] z-[50] pointer-events-none"
+            alt="Character" />
+
+        <!-- BULAT -->
+        <!-- <div
+            class="absolute  left-1/2 -translate-x-1/2 top-[60%] -translate-y-1/2 z-[47] flex justify-center items-center">
+            <div class="absolute w-[400px] h-[400px] rounded-full bg-purple-400  animate-pulse-slow"></div>
+            <div class="absolute w-[250px] h-[250px] rounded-full bg--400  animate-rotate-slow"></div>
+        </div> -->
+
+
+
+
+        <!-- SHAPE / AWAN -->
+        <img src="src/vector/element-hero-1.svg"
+            class="absolute bottom-0 left-1/2 top-[60%] sm:top-[60%] md:top-[50%] lg:top-[60%] -translate-x-1/2 -translate-y-1/2 w-[450px] sm:scale-150 md:w-[100%] lg:scale-150 max-w-[650px] z-[45] pointer-events-none object-contain block "
+            alt="Cloud Shape" />
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about"
+        class="relative bg-[#074A70] -mt-32 sm:-mt-48 md:-mt-48 pt-30 pb-32 rounded-t-[2rem] md:rounded-t-[4rem] h-[100vh] z-10 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+
+        <div class="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center min-h-[60vh]">
+            <div class="flex flex-col mt-20">
+                <h2
+                    class="font-formula text-white text-italic font-extrabold text-3xl xs:text-4xl md:text-6xl tracking-wider leading-relaxed mb-10 text-center drop-shadow-md">
+                    ABOUT EVENT
+                </h2>
+            </div>
+
+
+            <div
+                class="bg-white rounded-3xl p-8 xs:p-10 md:p-16 shadow-xl w-full max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                <p class="text-gray-700 text-center text-sm md:text-lg leading-relaxed">
+                    Seminar Pelajar Gen-Z dan HIMMAH CAMPUS EXPO adalah event yang diadakan oleh Pondok Pesantren Bayt
+                    Al-Hikmah dalam rangka meningkatkan wawasan terkait masa depan generasi muda terutama di bidang
+                    pendidikan.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SPEAKER -->
+    <section
+        class="relative bg-[#02285F] -mt-32 sm:-mt-48 md:-mt-48 pt-32 pb-20 h-[320vh] sm:h-[250vh] md:h-[260vh] lg:h-[300vh] z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+        <img src="src/vector/elewan.svg"
+            class="absolute scale-150 top-0 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto z-[999] pointer-events-none object-contain block "
+            alt="">
+        <!-- noise efek -->
+        <!-- <div class="absolute inset-0 filter-noise opacity-60 pointer-events-none"></div> -->
+
+        <div class="container mx-auto px-6 relative z-30 pt-5 -mt-20 text-center">
+            <h2
+                class="font-formula text-white font-extrabold text-3xl xs:text-4xl md:text-6xl lg:pt-24 mb-10  drop-shadow-md">
+                The Speaker
+            </h2>
+        </div>
+
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px] -translate-y-1/2 z-10 ">
+            <img src="src/vector/profil.svg" class="w-[350px] sm:scale-125 lg:scale-[2] h-auto object-fit"
+                alt="Speaker" />
+
+
+            <div class="container mx-auto px-6   flex flex-col space-y-8 items-center justify-center h-full py-2">
+                <div
+                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col space-y-4 p-8 rounded-2xl shadow-lg">
+                    <h2 class="font-poppins text-black  uppercase text-2xl font-[4rem] font-black">Academic History</h2>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-32 h-32 flex items-center justify-center">
+                                <img src="src/img/logo/smp.svg" class="w-full h-full object-contain" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 text-center uppercase text-md">SMP negeri Pertama 115
+                                Jakarta</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-24 h-24 flex items-center justify-center">
+                                <img src="src/img/logo/man.svg" class="w-full h-full object-contain" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 text-center uppercase text-md">MAN Insan cendekia
+                                Serpong</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-32 h-32 flex items-center justify-center">
+                                <img src="src/img/logo/fk_ui.svg" class="w-full h-full object-contain" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-gray-800 text-center uppercase text-md">Fakultas Kedokteran
+                                Universitas Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col space-y-4 p-8 rounded-2xl shadow-lg">
+                    <h2 class="font-poppins text-black uppercase text-2xl font-black">Achievements</h2>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-32 h-32 flex items-center justify-center">
+                                   <img src="src/img/logo/piala.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                           <p class="font-semibold text-gray-800 text-center uppercase text-md">Juara 1 Asian Medical  Students Conference (AMSC) 2022 in Seoul</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-32 h-32 flex items-center justify-center">
+                               <img src="src/img/logo/piala.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                           <p class="font-semibold text-gray-800 text-center uppercase text-md">Juara 3 Mahasiswa Berprestasi Tingkat Nasional 2023</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        <div class="flex justify-center items-center">
+                            <div class="w-24 h-24 flex items-center justify-center">
+                               <img src="src/img/logo/coc.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                           <p class="font-semibold text-gray-800 text-center uppercase text-md">Pemenang Clash Of Champions Season 1 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Element -->
+
+
+    </section>
+
+
+
+    <!-- registration  -->
+    <section class="relative bg-[#FAF3A1] h-[100vh] -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
+        <img src="src/vector/elewan.svg"
+            class="absolute scale-150 top-0 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-auto z-[110] pointer-events-none object-contain block "
+            alt="">
+
+        <div class="flex justify-center items-center">
+            <h1 class="font-formula tracking-wider text-center text-xl font-extrabold text-white">Segera Daftar
+                Sekarang!!</h1>
+        </div>
+        <div class="container mx-auto px-6 flex flex-col items-center space-y-8">
+            <div
+                class="bg-white w-full max-w-lg p-10 rounded-3xl shadow-xl flex flex-col items-center space-y-6 transform transition-transform duration-300">
+                <h3 class="font-poppins text-2xl font-extrabold text-gray-800">Registration</h3>
+                <p class="text-2xl font-black text-[#C4DB6F]">Rp 30.000/Orang</p>
+                <ul class="text-gray-600 text-center space-y-2">
+                    <li>E-Certificate</li>
+                    <li>Seminar Kit</li>
+                    <li>Snack & Drink</li>
+                </ul>
+                <a href="https://forms.gle/Qnx6r7zKsKBbLdZL6" target="_blank"
+                    class="bg-[#C4DB6F] text-white px-12 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-[#C4DB6F]/50 transition-all">Amankan
+                    Slot</a>
+            </div>
+        </div>
+
+        <footer>
+            <div></div>
+            
+        </footer>
+    </section>
+
+    <!-- footer section -->
+     <section class></section>
+
+
+    <svg width="0" height="0" aria-hidden="true" style="position: absolute; width: 0; height: 0;">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" stitchTiles="stitch" />
+            <feBlend mode="screen" />
+        </filter>
+    </svg>
+
+
+
+    <script>
+        const sidebarToggle = document.getElementById('sidebarToggle');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const sidebarMenu = document.getElementById('sidebarMenu');
+
+        // Fungsi Buka (Menurunkan menu dari atas)
+        function openSidebar() {
+            sidebarMenu.classList.remove('-translate-y-full');
+            document.body.style.overflow = 'hidden'; // Kunci scroll layar utama
+        }
+
+        // Fungsi Tutup (Menaikkan menu ke atas kembali)
+        function closeSidebarFunc() {
+            sidebarMenu.classList.add('-translate-y-full');
+            document.body.style.overflow = 'auto'; // Aktifkan scroll kembali
+        }
+
+        // Event Listeners
+        sidebarToggle.addEventListener('click', openSidebar);
+        closeSidebar.addEventListener('click', closeSidebarFunc);
+
+        // Menutup sidebar otomatis jika link diklik (Smooth Scroll)
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+
+                // Tutup menu
+                closeSidebarFunc();
+
+                // Smooth scroll ke target
+                if (href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !sidebarMenu.classList.contains('-translate-y-full')) {
+                closeSidebarFunc();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
