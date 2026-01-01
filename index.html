@@ -71,24 +71,24 @@
 
     <!-- HERO -->
     <section id="home"
-        class="relative min-h-screen bg-gray-800 sm:min-h-[120vh] md:min-h-[120vh] lg:h-[180vh] flex flex-col justify-center pb-20">
+        class="relative min-h-screen bg-gray-800 sm:min-h-[120vh] md:min-h-[130vh] lg:h-[180vh] flex flex-col justify-center pb-20">
         <!-- noise efek -->
         <div class="absolute inset-0 filter-noise opacity-20 pointer-events-none"></div>
 
         <!-- JUDUL -->
         <div
-            class="relative w-full text-center z-[49] px-4 top-[50%] sm:-top-[50%] md:top-[90%] lg:-top-48 lg:w-[80%] lg:left-1/2 lg:-translate-x-1/2 -translate-y-1/2 pb-20">
+            class="relative w-full text-center z-[49] px-4 top-[50%] sm:-top-[60%] md:top-[90%] sm:-top-16 md:-top-52 lg:-top-48 lg:w-[80%] lg:left-1/2 lg:-translate-x-1/2 -translate-y-1/2 pb-20">
             <img src="src/vector/JUDUL-ATAS.png" alt="Judul Atas" class="w-full object-fit">
         </div>
 
         <!-- KARAKTER -->
         <img src="./src/vector/element-hero-2.png"
-            class="absolute top-[50%]  sm:top-[45%] md:top-[50%] left-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/4 w-[100%]  sm:scale-110 md:scale-125 lg:scale-[2] max-w-[280px] z-[50] pointer-events-none"
+            class="absolute top-[50%]  sm:top-[45%] md:top-[50%] left-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/4 w-[100%]  sm:scale-110 md:scale-150 lg:scale-[2] max-w-[280px] z-[50] pointer-events-none"
             alt="Character" />
 
         <!-- BULAT -->
         <div
-            class="absolute  left-1/2 -translate-x-1/2 top-[60%] -translate-y-1/2 z-[47] flex justify-center items-center">
+            class="absolute  left-1/2 -translate-x-1/2 top-[60%] -translate-y-1/2 z-[47] md:scale-[2] flex justify-center items-center">
             <div class="absolute w-[200px] h-[200px] rounded-full bg-yellow-300  animate-pulse-slow"></div>
             <div class="absolute w-[150px] h-[150px] rounded-full bg-blue-300  animate-pulse-slow"></div>
         </div>
@@ -98,7 +98,7 @@
 
         <!-- SHAPE / AWAN -->
         <img src="src/vector/element-hero-1.svg"
-            class="absolute bottom-0 left-1/2 top-[60%] sm:top-[60%] md:top-[50%] lg:top-[60%] -translate-x-1/2 -translate-y-1/2 w-[450px] sm:scale-150 md:w-[100%] lg:scale-150 max-w-[650px] z-[45] pointer-events-none object-contain block "
+            class="absolute bottom-0 left-1/2 top-[60%] sm:top-[60%] md:top-[60%] lg:top-[60%] -translate-x-1/2 -translate-y-1/2 w-[450px] sm:scale-150 md:w-[100%] lg:scale-150 max-w-[650px] z-[45] pointer-events-none object-contain block "
             alt="Cloud Shape" />
 
     </section>
@@ -106,7 +106,7 @@
 
     <!-- ABOUT -->
     <section id="about"
-        class="relative bg-[#074A70] -mt-32 sm:-mt-48 md:-mt-48 pt-30 pb-32 rounded-t-[2rem] md:rounded-t-[4rem] h-[160vh] z-10 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+        class="relative bg-[#074A70] -mt-32 sm:-mt-48 md:-mt-48 pt-30 pb-32 rounded-t-[2rem] md:rounded-t-[4rem] h-[160vh] sm:h-[180vh] lg:h-[200vh] z-10 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
 
         <div class="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center min-h-[60vh] pb-20">
             <div class="flex flex-col mt-20">
@@ -119,10 +119,14 @@
 
             <div
                 class="bg-white rounded-3xl p-8 xs:p-10 md:p-16 shadow-xl w-full max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-300">
-                <p class="text-gray-700 text-center text-sm md:text-lg leading-relaxed">
-                    Seminar Pelajar Gen-Z dan HIMMAH CAMPUS EXPO adalah event yang diadakan oleh Pondok Pesantren Bayt
-                    Al-Hikmah dalam rangka meningkatkan wawasan terkait masa depan generasi muda terutama di bidang
-                    pendidikan.
+                <p class="font-poppins text-center text-sm md:text-lg leading-relaxed">
+                    <span class="font-bold text-blue-900">Seminar Pelajar Gen-Z dan HIMMAH CAMPUS EXPO</span> adalah
+                    event yang diadakan oleh Pondok Pesantren Bayt
+                    Al-Hikmah pada tanggal <span class="font-bold text-blue-900">31 Januari 2026</span> dalam rangka
+                    meningkatkan wawasan terkait masa depan generasi muda terutama di bidang
+                    pendidikan. Kali ini Seminar Pelajar Gen-Z mengusung tema <span
+                        class="font-bold text-blue-900 font-italic">“Membangun Pelajar Kreatif dan Percaya Diri: untuk
+                        Generasi Muda yang Berkembang, Berkarya, dan Berprestasi”</span>.
                 </p>
             </div>
         </div>
@@ -135,10 +139,10 @@
 
         <div class="container mx-auto px-6 flex justify-center pb-20 relative z-30">
             <div
-                class="bg-white p-4 sm:p-6 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] w-full max-w-5xl transform hover:scale-[1.01] transition-all duration-500">
+                class="bg-white p-4 sm:p-6 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] w-full sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl transform hover:scale-[1.01] transition-all duration-500">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.1275643192539!2d112.91176042741984!3d-7.662239783096332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7c9005410aca9%3A0xa7e859b9c5623d91!2sGOR%20Bayt%20Al-Hikmah!5e0!3m2!1sen!2sid!4v1767188530679!5m2!1sen!2sid"
-                    class="w-full h-[300px] md:h-[500px] rounded-[2rem] shadow-inner grayscale-[30%] hover:grayscale-0 transition-all duration-500"
+                    class="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[550px] xl:h-[600px] rounded-[2rem] shadow-inner grayscale-[30%] hover:grayscale-0 transition-all duration-500"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -150,14 +154,14 @@
 
     <!-- SPEAKER -->
     <section
-        class="relative bg-[#02285F] -mt-32 sm:-mt-48 md:-mt-48 pt-32 pb-20 h-[320vh] sm:h-[250vh] md:h-[260vh] lg:h-[300vh] z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+        class="relative bg-[#02285F] -mt-32 sm:-mt-48 md:-mt-48 pt-32 pb-20 max-h-[320vh] sm:h-[300vh] md:h-[280vh] lg:h-[250vh] z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
         <img src="src/vector/elewan.svg"
-            class="absolute scale-150 top-0 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto z-[999] pointer-events-none object-contain block "
+            class="absolute scale-150 top-0 lg:-mt-20 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto z-[999] pointer-events-none object-contain block "
             alt="">
         <!-- noise efek -->
         <!-- <div class="absolute inset-0 filter-noise opacity-60 pointer-events-none"></div> -->
 
-        <div class="container mx-auto px-6 relative z-30 pt-5 -mt-20 text-center">
+        <div class="container mx-auto px-6 relative z-30 pt-5 -mt-20 lg:pt-24 text-center">
             <h2
                 class="font-formula text-white font-extrabold text-3xl xs:text-4xl md:text-6xl lg:pt-24 mb-10  drop-shadow-md">
                 The Speaker
@@ -165,17 +169,17 @@
         </div>
 
 
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px] -translate-y-1/2 z-10 ">
-            <img src="src/vector/profil.svg" class="w-[350px] sm:scale-125 lg:scale-[2] h-auto object-fit"
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px]  -translate-y-1/2  ">
+            <img src="src/vector/profil.svg" class="w-[350px] lg:-mt-32  sm:scale-125 lg:scale-[2] h-auto object-fit"
                 alt="Speaker" />
 
 
             <div class="container mx-auto px-6   flex flex-col space-y-8 items-center justify-center h-full py-2">
                 <div
-                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col space-y-4 p-8 rounded-2xl shadow-lg">
+                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col lg:flex-row lg:space-x-8 space-y-4 p-8 rounded-2xl shadow-lg">
                     <h2 class="font-poppins text-black  uppercase text-2xl font-[4rem] font-black">Academic History</h2>
                     <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        class="bg-white w-[15rem] h-[15rem] lg:w-[18rem]   p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
                         <div class="flex justify-center items-center">
                             <div class="w-32 h-32 flex items-center justify-center">
                                 <img src="src/img/logo/smp.svg" class="w-full h-full object-contain" alt="">
@@ -212,10 +216,10 @@
                     </div>
                 </div>
                 <div
-                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col space-y-4 p-8 rounded-2xl shadow-lg">
+                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col lg:flex-row lg:space-x-8 space-y-4 p-8 rounded-2xl shadow-lg">
                     <h2 class="font-poppins text-black uppercase text-2xl font-black">Achievements</h2>
                     <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
+                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col  items-center justify-center ">
                         <div class="flex justify-center items-center">
                             <div class="w-32 h-32 flex items-center justify-center">
                                 <img src="src/img/logo/piala.png" alt="">
@@ -263,12 +267,12 @@
 
 
     <!-- registration  -->
-    <section class="relative bg-[#222222] h-[100vh] -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
+    <section class="relative bg-[#222222] h-[100vh] lg:h-[180vh]  -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
         <img src="src/vector/elewan.svg"
-            class="absolute scale-150 top-0 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-auto z-[110] pointer-events-none object-contain block "
+            class="absolute scale-150 top-0 lg:-mt-32 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-auto z-[110] pointer-events-none object-contain block "
             alt="">
 
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center pt-32">
             <h1 class="font-formula tracking-wider text-center text-xl font-extrabold text-white">Segera Daftar
                 Sekarang!!</h1>
         </div>
@@ -290,32 +294,36 @@
 
 
         <!-- contact  -->
-        <div class="absolute w-[200px] bg-white bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2  h-[14rem]">
+        <!-- <div class="absolute w-[200px] bg-white bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2  h-[14rem]">
 
-        </div>
+        </div> -->
 
     </section>
 
     <!-- footer section -->
-    <section class="relative bg-[#222222] h-[80vh] -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
+    <section class="relative bg-[#222222] h-[90vh] -mt-20 pt-24 lg:pt-16  space-y-4 rounded- z-50 shadow-2xl">
         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
-            <img src="src/img/logo/footer.png" class="w-full h-full object-cover" alt="">
+            <img src="src/img/logo/footer.png" class="w-full h-full  lg:h-[50%] object-cover" alt="">
             <div class="absolute bottom-0 p-6 left-1/2 -translate-x-1/2 w-full h-[14rem]">
-                <div class="flex justify-center items-start h-full">
-                    <div class="flex flex-col space-y-8">
+                <div class="flex justify-center items-start lg:items-center h-full ">
+                    <div class="flex flex-col space-y-8 ">
                         <div class="text-center">
-                            <h1 class="text-xl font-formula text-blue-900">SEMINAR PELAJAR GEN-Z</h1>
-                            <p class="text-md font-formula text-blue-900">AND HIMMAH CAMPUS EXPO 2026</p>
+                            <h1 class="text-xl lg:text-6xl font-formula text-blue-900">SEMINAR PELAJAR GEN-Z</h1>
+                            <p class="text-md lg:text-4xl font-formula text-blue-900">AND HIMMAH CAMPUS EXPO 2026</p>
+                            <p class="text-sm lg:text-xl font-formula text-blue-900">COPYRIGHT © 2026 ALL RIGHTS
+                                RESERVED</p>
                         </div>
 
                         <!-- somed-ftr -->
-                        <div class="flex flex-row justify-center items-center gap-6">
-                            <a target="_blank" class="w-12 h-12" href="https://www.instagram.com/himmahofficial_/"><img
-                                    src="src/vector/icons/ig.png" alt="IG"></a>
-                            <a target="_blank" class="w-12 h-12"
+                        <div class="flex flex-row justify-center -mt-20 items-center gap-6 space-x-8">
+                            <a target="_blank" class="w-12 h-12 lg:scale-150"
+                                href="https://www.instagram.com/himmahofficial_/"><img src="src/vector/icons/ig.png"
+                                    alt="IG"></a>
+                            <a target="_blank" class="w-12 h-12 lg:scale-150"
                                 href="https://wa.me/6281250017813?text=Hai,%20Humas%20Event%20Seminar%20Pelajar%20Gen-Z%202026%20Saya%20Ingin%20Bertanya%20Terkait%20:"><img
                                     src="src/vector/icons/wa.png" alt="WA"></a>
                         </div>
+
 
                     </div>
                 </div>
