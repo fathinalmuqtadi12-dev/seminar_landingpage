@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminar Pelajar</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <style>
@@ -169,9 +170,10 @@
         </div>
 
 
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px] lg:max-w-[500px]  -translate-y-1/2  ">
-            <img src="src/vector/profil.svg" class="w-[350px] lg:-mt-48 lg:ml-20  sm:scale-125 lg:scale-[2] h-auto object-fit pb-32"
-                alt="Speaker" />
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px] lg:max-w-[500px]  -translate-y-1/2  ">
+            <img src="src/vector/profil.svg"
+                class="w-[350px] lg:-mt-48 lg:ml-20  sm:scale-125 lg:scale-[2] h-auto object-fit pb-32" alt="Speaker" />
 
 
             <div class="container mx-auto px-6 flex flex-col space-y-8 items-center justify-center h-full py-2">
@@ -301,7 +303,8 @@
     </section>
 
     <!-- footer section -->
-    <section class="relative bg-[#222222] h-[90vh] lg:h-[100vh] -mt-20 pt-24 lg:pt-16  space-y-4 rounded- z-50 shadow-2xl">
+    <section
+        class="relative bg-[#222222] h-[90vh] lg:h-[100vh] -mt-20 pt-24 lg:pt-16  space-y-4 rounded- z-50 shadow-2xl">
         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
             <img src="src/img/logo/footer.png" class="w-full h-full  lg:h-[50%] object-cover" alt="">
             <div class="absolute bottom-0 lg:bottom-[30%] p-6 left-1/2 -translate-x-1/2 w-full h-[14rem]">
@@ -340,8 +343,10 @@
     </svg>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         const sidebarToggle = document.getElementById('sidebarToggle');
         const closeSidebar = document.getElementById('closeSidebar');
         const sidebarMenu = document.getElementById('sidebarMenu');
