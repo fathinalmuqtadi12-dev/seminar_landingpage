@@ -21,7 +21,7 @@
 
     <!-- NAVBAR UTAMA -->
     <nav
-        class="fixed top-0 left-0 right-0 z-[100] h-auto sm:h-auto lg:h-[8rem] bg-white/10 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
+        class="fixed top-0 left-0 right-0 z-[100] h-auto sm:h-auto lg:h-[6rem] bg-white/10 backdrop-blur-xl border-b border-white/10 transition-all duration-300">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
 
@@ -60,56 +60,79 @@
             <a href="#about"
                 class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Tentang
             </a>
-            <a href="#"
+            <a href="#daftar"
                 class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Daftar
             </a>
-            <a href="#"
-                class="sidebar-link group flex items-center p-4 text-3xl font-semibold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Masuk
-            </a>
+            
         </nav>
     </div>
 
 
-    <!-- HERO -->
-    <section id="home"
-        class="relative min-h-screen bg-gray-800 sm:min-h-[120vh] md:min-h-[150vh] lg:h-[180vh] flex flex-col justify-center pb-20">
-        <!-- noise efek -->
-        <div class="absolute inset-0 filter-noise opacity-20 pointer-events-none"></div>
+<section
+  id="home"
+  class="relative bg-gray-800 overflow-hidden
+         min-h-screen lg:min-h-[120vh] xl:min-h-[140vh]"
+>
 
-        <!-- JUDUL -->
-        <div
-            class="relative w-full text-center z-[49] px-4 top-[50%] sm:-top-[65%] md:top-[85%] sm:-top-16 md:-top-60 lg:-top-48 lg:w-[80%] lg:left-1/2 lg:-translate-x-1/2 -translate-y-1/2 pb-20">
-            <img src="src/vector/JUDUL-ATAS.png" alt="Judul Atas" class="w-full object-fit">
-        </div>
+  <!-- noise -->
+  <div class="absolute inset-0 filter-noise opacity-20 pointer-events-none"></div>
 
-        <!-- KARAKTER -->
-        <img src="./src/vector/element-hero-2.png"
-            class="absolute top-[50%]  sm:top-[45%] md:top-[50%] left-1/2 bottom-1/2 -translate-x-1/2 -translate-y-1/4 w-[100%]  sm:scale-110 md:scale-150 lg:scale-[2] max-w-[280px] z-[50] pointer-events-none"
-            alt="Character" />
+  <!-- WRAPPER UTAMA (CENTER SYSTEM) -->
+  <div class="relative z-40 flex flex-col items-center justify-center
+              pt-32 sm:pt-40 lg:pt-48">
 
-        <!-- BULAT -->
-        <div
-            class="absolute  left-1/2 -translate-x-1/2 top-[60%] -translate-y-1/2 z-[47] md:scale-[2] flex justify-center items-center">
-            <div class="absolute w-[200px] h-[200px] rounded-full bg-yellow-300  animate-pulse-slow"></div>
-            <div class="absolute w-[150px] h-[150px] rounded-full bg-blue-300  animate-pulse-slow"></div>
-        </div>
+    <!-- JUDUL -->
+    <img
+      src="src/vector/JUDUL-ATAS.png"
+      class="w-[280px] sm:w-[420px] md:w-[540px]
+             lg:w-[640px] xl:w-[800px]
+             mx-auto mb-16"
+    />
 
+    <!-- HERO AREA (KARAKTER + BULAT) -->
+    <div class="relative flex items-center justify-center
+                w-full max-w-5xl aspect-square">
 
+      <!-- BULAT -->
+      <div
+        class="absolute inset-0 flex items-center justify-center
+               scale-100 md:scale-[1.6] xl:scale-[2.2] z-[47]">
+        <div class="absolute w-[200px] h-[200px] rounded-full bg-yellow-300 animate-pulse-slow"></div>
+        <div class="absolute w-[150px] h-[150px] rounded-full bg-blue-300 animate-pulse-slow"></div>
+      </div>
 
+      <!-- KARAKTER -->
+      <img
+        src="./src/vector/element-hero-2.png"
+        class="relative z-[50]
+               w-[220px] sm:w-[300px] md:w-[360px]
+               lg:w-[420px] xl:w-[480px]
+               pointer-events-none"
+      />
+      <img
+    src="src/vector/element-hero-1.svg"
+    class="absolute bottom-0 left-1/2 -translate-x-1/2
+           w-[420px] sm:w-[600px] md:w-[760px]
+           lg:w-[900px] xl:w-[1100px]
+           z-[45] pointer-events-none"
+  />
+    </div>
 
-        <!-- SHAPE / AWAN -->
-        <img src="src/vector/element-hero-1.svg"
-            class="absolute bottom-0 left-1/2 top-[60%] sm:top-[60%] md:top-[60%] lg:top-[60%] -translate-x-1/2 -translate-y-1/2 w-[450px] sm:scale-150 md:w-[100%] lg:scale-150 max-w-[650px] z-[45] pointer-events-none object-contain block "
-            alt="Cloud Shape" />
+  </div>
 
-    </section>
+  <!-- SHAPE / AWAN -->
+  
+
+</section>
+
 
 
     <!-- ABOUT -->
     <section id="about"
-        class="relative bg-[#074A70] -mt-32 sm:-mt-48 md:-mt-48 pt-30 pb-32 rounded-t-[2rem] md:rounded-t-[4rem] h-[170vh] sm:h-[180vh] lg:h-[200vh] z-10 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+  class="relative bg-[#074A70] -mt-24 lg:-mt-48 pt-32 pb-32 rounded-t-[2rem] md:rounded-t-[4rem] min-h-screen lg:min-h-[320vh] z-10">
 
-        <div class="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center min-h-[60vh] pb-20">
+       <div data-aos="fade-up" class="container  mx-auto px-6 relative z-10 flex flex-col items-center gap-20">
+
             <div class="flex flex-col mt-20">
                 <h2
                     class="font-formula text-white text-italic font-extrabold text-3xl xs:text-4xl md:text-6xl tracking-wider leading-relaxed mb-10 text-center drop-shadow-md">
@@ -119,7 +142,7 @@
 
 
             <div
-                class="bg-white rounded-3xl p-8 xs:p-10 md:p-16 shadow-xl w-full max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-300">
+                class="bg-white rounded-3xl p-8 xs:p-10 md:p-16 shadow-xl w-full max-w-4xl mx-auto transform hover:scale-105 transition-transform duration-300  ">
                 <p class="font-poppins text-center text-sm md:text-lg leading-relaxed">
                     <span class="font-bold text-blue-900">Seminar Pelajar Gen-Z dan HIMMAH CAMPUS EXPO</span> adalah
                     event yang diadakan oleh Pondok Pesantren Bayt
@@ -134,11 +157,11 @@
 
 
 
-        <h1
-            class="font-formula text-white text-italic font-extrabold text-3xl xs:text-4xl md:text-6xl tracking-wider leading-relaxed mb-10 text-center drop-shadow-md">
+        <h1 data-aos="fade-up"
+            class="font-formula  text-white text-italic font-extrabold text-3xl xs:text-4xl md:text-6xl tracking-wider leading-relaxed mb-10 text-center drop-shadow-md pt-24  pb-24">
             LOCATION</h1>
 
-        <div class="container mx-auto px-6 flex justify-center pb-20 relative z-30">
+        <div data-aos="fade-up" class="container mx-auto px-6 flex justify-center pb-20 relative z-30">
             <div
                 class="bg-white p-4 sm:p-6 rounded-[2.5rem] shadow-[0_20px_50px_rgba(0,0,0,0.15)] w-full sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl transform hover:scale-[1.01] transition-all duration-500">
                 <iframe
@@ -153,123 +176,204 @@
 
     </section>
 
-    <!-- SPEAKER -->
-    <section
-        class="relative bg-[#02285F] -mt-32 sm:-mt-48 md:-mt-48 pt-32 pb-20 h-[320vh] sm:h-[32`0vh] md:h-[280vh] lg:h-[350vh] z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
-        <img src="src/vector/elewan.svg"
-            class="absolute scale-150 top-0 lg:-mt-48 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-auto z-[999] pointer-events-none object-contain block "
-            alt="">
-        <!-- noise efek -->
-        <!-- <div class="absolute inset-0 filter-noise opacity-60 pointer-events-none"></div> -->
+<!-- SPEAKER -->
+<section class="relative bg-[#02285F] xl:min-h-[200vh] -mt-32 sm:-mt-48 pt-32 pb-32 z-30 shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
 
-        <div class="container mx-auto px-6 relative z-30 pt-5 -mt-20 lg:pt-24 text-center">
-            <h2
-                class="font-formula text-white font-extrabold text-3xl xs:text-4xl md:text-6xl lg:pt-24 mb-10  drop-shadow-md">
-                The Speaker
-            </h2>
+    <!-- elemen dekor (TETAP) -->
+    <img src="src/vector/elewan.svg"
+        class="absolute scale-150 top-0 -mt-10 lg:-mt-32 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full z-[20] pointer-events-none"
+        alt="">
+
+    <!-- container utama -->
+    <div class="container mx-auto px-6 relative z-30 pb-32 pt-24">
+
+        <!-- JUDUL -->
+        <h2 data-aos="fade-up"
+            class="font-formula text-white font-extrabold text-3xl xs:text-4xl md:text-6xl text-center mb-20 drop-shadow-md">
+            Featured Speaker
+        </h2>
+
+        <!-- HERO SPEAKER -->
+        <div class="flex flex-col items-center text-center mb-28">
+
+
+            <!-- Deskripsi singkat -->
+  <!-- BIODATA CARD -->
+<!-- BIODATA CARD (FOTO + DATA) -->
+<div data-aos="fade-up"
+    class="
+    mt-14
+    bg-white/30 backdrop-blur-xl
+    rounded-3xl
+    p-6 sm:p-8 lg:p-12
+    max-w-xl lg:max-w-4xl 
+    mx-auto mb-20
+    shadow-xl
+    ">
+
+    <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 ">
+
+        <!-- FOTO -->
+        <div class="w-full lg:w-1/3 flex justify-center">
+            <img 
+                src="src/img/shak.svg"
+                alt="Shakira Amirah"
+                class="
+                w-48 object-contain  sm:w-56 lg:w-64
+                rounded-2xl
+                shadow-2xl border-4 border-white
+                ">
         </div>
 
+        <!-- BIODATA -->
+        <div class="w-full lg:w-2/3 text-white">
 
-        <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 w-[100%] max-w-[350px] lg:max-w-[500px]  -translate-y-1/2  ">
-            <img src="src/vector/profil.svg"
-                class="w-[350px] lg:-mt-48 lg:ml-20  sm:scale-125 lg:scale-[2] h-auto object-fit pb-32" alt="Speaker" />
+            <h4
+                class="
+                text-center lg:text-left
+                font-extrabold
+                text-lg sm:text-xl lg:text-2xl
+                mb-6
+                tracking-wide
+                ">
+                Speaker Profile
+            </h4>
+
+            <!-- BIODATA -->
+<div class="w-full lg:w-2/3 text-white">
 
 
-            <div class="container mx-auto px-6 flex flex-col space-y-8 items-center justify-center h-full py-2">
-                <div
-                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col space-y-4 p-8 rounded-2xl shadow-lg">
-                    <h2 class="font-poppins text-black  uppercase text-2xl font-[4rem] font-black">Academic History</h2>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem]   p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-32 h-32 flex items-center justify-center">
-                                <img src="src/img/logo/smp.svg" class="w-full h-full object-contain" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">SMP negeri Pertama 115
-                                Jakarta</p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-24 h-24 flex items-center justify-center">
-                                <img src="src/img/logo/man.svg" class="w-full h-full object-contain" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">MAN Insan cendekia
-                                Serpong</p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-32 h-32 flex items-center justify-center">
-                                <img src="src/img/logo/fk_ui.svg" class="w-full h-full object-contain" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">Fakultas Kedokteran
-                                Universitas Indonesia</p>
-                        </div>
-                    </div>
+
+    <div class="space-y-4 text-sm sm:text-base lg:text-lg">
+
+        <div class="flex gap-3 border-b border-white/10 pb-3
+">
+            <span class="min-w-[140px] font-semibold text-white/80">
+                Nama
+            </span>
+            <span class="text-white">
+                Shakira Amirah
+            </span>
+        </div>
+
+        <div class="flex gap-3 border-b border-white/10 pb-3
+">
+            <span class="min-w-[140px] font-semibold text-white/80">
+                Tempat, Tgl Lahir
+            </span>
+            <span class="text-white">
+                Malang, 6 November 2002
+            </span>
+        </div>
+
+        <div class="flex gap-3 border-b border-white/10 pb-3
+">
+            <span class="min-w-[140px] font-semibold text-white/80">
+                Pendidikan
+            </span>
+            <span class="text-white">
+                Fakultas Kedokteran, Universitas Indonesia
+            </span>
+        </div>
+
+        <div class="flex gap-3 border-b border-white/10 pb-3
+">
+            <span class="min-w-[140px] font-semibold text-white/80">
+                Prestasi
+            </span>
+            <span class="text-white">
+                Pemenang Clash of Champions Ruangguru 2024
+            </span>
+        </div>
+
+        <div class="flex gap-3  border-b border-white/10 pb-3
+">
+            <span class="min-w-[140px] font-semibold text-white/80">
+                Keahlian
+            </span>
+            <span class="text-white">
+                Public Speaking, Mentoring Akademik
+            </span>
+        </div>
+
+    </div>
+</div>
+
+        </div>
+
+    </div>
+</div>
+
+
+        <!-- GRID INFORMASI -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 place-items-start">
+
+            <!-- Academic History -->
+            <div
+                class="bg-white/50 backdrop-blur-2xl p-8 rounded-2xl shadow-lg flex flex-col space-y-6 w-full">
+                <h2 class="font-poppins text-black uppercase text-xl font-black text-center">
+                    Academic History
+                </h2>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/smp.svg" class="w-24 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        SMP Negeri Pertama 115 Jakarta
+                    </p>
                 </div>
-                <div
-                    class="flex bg-white/50 backdrop-blur-2xl w-fit h-fit justify-start items-center flex-col  space-y-4 p-8 rounded-2xl shadow-lg">
-                    <h2 class="font-poppins text-black uppercase text-2xl font-black">Achievements</h2>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col  items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-32 h-32 flex items-center justify-center">
-                                <img src="src/img/logo/piala.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">Juara 1 Asian Medical
-                                Students Conference (AMSC) 2022 in Seoul</p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-32 h-32 flex items-center justify-center">
-                                <img src="src/img/logo/piala.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">Juara 3 Mahasiswa
-                                Berprestasi Tingkat Nasional 2023</p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white w-[15rem] h-[15rem] p-6 rounded-xl shadow-lg flex flex-col items-center justify-center ">
-                        <div class="flex justify-center items-center">
-                            <div class="w-24 h-24 flex items-center justify-center">
-                                <img src="src/img/logo/coc.png" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-gray-800 text-center uppercase text-md">Pemenang Clash Of
-                                Champions Season 1 2024</p>
-                        </div>
-                    </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/man.svg" class="w-20 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        MAN Insan Cendekia Serpong
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/fk_ui.svg" class="w-24 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        Fakultas Kedokteran Universitas Indonesia
+                    </p>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
-        <!-- Element -->
 
+            <!-- Achievements -->
+            <div
+                class="bg-white/50 backdrop-blur-2xl p-8 rounded-2xl shadow-lg flex flex-col space-y-6 w-full">
+                <h2 class="font-poppins text-black uppercase text-xl font-black text-center">
+                    Achievements
+                </h2>
 
-    </section>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/piala.png" class="w-24 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        Juara 1 AMSC 2022 – Seoul
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/piala.png" class="w-24 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        Juara 3 Mahasiswa Berprestasi Nasional 2023
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <img src="src/img/logo/coc.png" class="w-20 mx-auto mb-4" />
+                    <p class="font-semibold text-gray-800 uppercase text-sm">
+                        Pemenang Clash Of Champions 2024
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 
     <!-- registration  -->
-    <section class="relative bg-[#222222] h-[100vh] lg:h-[180vh]  -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
+    <section id="daftar" class="relative bg-[#222222] min-h-screen lg:min-h-[220vh] -mt-20 pt-24  space-y-4 rounded- z-50 shadow-2xl">
         <img src="src/vector/elewan.svg"
             class="absolute scale-150 top-0 lg:-mt-32 -mt-10 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-auto z-[110] pointer-events-none object-contain block "
             alt="">
@@ -292,21 +396,18 @@
                     class="bg-[#C4DB6F] text-white px-12 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-[#C4DB6F]/50 transition-all">Amankan
                     Slot</a>
             </div>
-        </div>
+        </div> 
 
 
-        <!-- contact  -->
-        <!-- <div class="absolute w-[200px] bg-white bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2  h-[14rem]">
 
-        </div> -->
 
     </section>
 
     <!-- footer section -->
     <section
-        class="relative bg-[#222222] h-[90vh] lg:h-[100vh] -mt-20 pt-24 lg:pt-16  space-y-4 rounded- z-50 shadow-2xl">
+        class="relative bg-[#222222] min-h-screen lg:h-[100vh] -mt-16 pt-24 lg:pt-16  space-y-4 rounded- z-50 shadow-2xl">
         <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
-            <img src="src/img/logo/footer.png" class="w-full h-full  lg:h-[50%] object-cover" alt="">
+            <img src="src/img/logo/footer.png" class="w-full h-full  lg:h-1/2 object-cover" alt="">
             <div class="absolute bottom-0 lg:bottom-[30%] p-6 left-1/2 -translate-x-1/2 w-full h-[14rem]">
                 <div class="flex justify-center items-start lg:items-center h-full ">
                     <div class="flex flex-col space-y-8 lg:space-y-[4rem] ">
